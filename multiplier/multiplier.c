@@ -3,7 +3,7 @@
 #include <string.h>
 #include <math.h>
 
-#define MAX_BITS 17
+#define MAX_BITS 18
 #define MAX_COMPUTABLE 511
 
 // Logic Gates
