@@ -52,7 +52,7 @@ int subtracter(int a, int b, int *borrow)
     return result;
 }
 
-// Util conversor between decimal and binary
+// Utils to convert decimal to binary and vice versa
 
 int *decimalToBin(int n) 
 {
