@@ -191,6 +191,8 @@ void computeRange(int **range)
     }
 }
 
+// Components of the math formula of multiplication
+
 int *sum(int *n1, int *n2) 
 {
     int *result = malloc(MAX_BITS * sizeof(int));

@@ -1,0 +1,1 @@
+Um multiplicador simples entre dois números implementando manualmente conceitos de baixo nível em C.
