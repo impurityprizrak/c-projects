@@ -3,9 +3,9 @@
 #include <string.h>
 #include <math.h>
 
-#define MAX_NUM 255
-#define MAX_COMPUTABLE 511
-#define MAX_BITS 18
+#define MAX_NUM 255 // Random Number
+#define MAX_COMPUTABLE 511 // MAX_NUM * 2 + 1
+#define MAX_BITS 18 // ceil(log2(MAX_NUMBER * MAX_NUMBER))
 
 // Logic Gates
 
