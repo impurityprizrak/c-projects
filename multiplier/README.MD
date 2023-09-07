@@ -1,1 +1,1 @@
-Um multiplicador simples entre dois números implementando manualmente conceitos de baixo nível em C.
+Um multiplicador simples de números binários em C, implementando manualmente conceitos de baixo nível, sem atalhos como operadores bitwise.
