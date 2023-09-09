@@ -133,7 +133,8 @@ double calculatePValue(double b1, double SE_b1, int df)
     return p_value_two_sided;
 }
 
-double calculateRValue(baseTable t) {
+double calculateRValue(baseTable t) 
+{
     double numerator = (double)(t.size * t.xy_sum) - (double)(t.x_sum * t.y_sum);
     double denominator_x = sqrt((double)(t.size * t.x2_sum) - pow((double)t.x_sum, 2));
     double denominator_y = sqrt((double)(t.size * t.y2_sum) - pow((double)t.y_sum, 2));
@@ -209,11 +210,13 @@ linearRegression simpleLinRegress(baseTable t, double alpha)
     return linregress;
 }
 
-double predictYValue(linearRegression lin_reg, double x_value) {
+double predictYValue(linearRegression lin_reg, double x_value) 
+{
     return lin_reg.b0 + lin_reg.b1 * x_value;
 }
 
-double predictXValue(linearRegression lin_reg, double y_value) {
+double predictXValue(linearRegression lin_reg, double y_value) 
+{
     return (y_value - lin_reg.b0) / lin_reg.b1;
 }
 
