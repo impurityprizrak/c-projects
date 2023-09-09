@@ -123,7 +123,7 @@ const baseTable *createTable(int *x, int *y)
     return table;
 }
 
-double calculatePValue(double SSR, double SSX, double b1, int df, double SE_b1)
+double calculatePValue(double b1, double SE_b1, int df)
 {
     double t_statistic = b1 / SE_b1;
 
@@ -194,7 +194,7 @@ linearRegression simpleLinRegress(baseTable t, double alpha)
     linregress.SE_b0 = SE_b0;
 
     int df = t.size-2;
-    double p_value = calculatePValue(SSR, SSX, b1, df, SE_b1);
+    double p_value = calculatePValue(b1, SE_b1, df);
     double r_value = calculateRValue(t);
     double t_critical = gsl_cdf_tdist_Pinv(1.0 - alpha / 2.0, df);
 
