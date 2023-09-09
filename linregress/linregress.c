@@ -142,7 +142,7 @@ double calculateRValue(baseTable t) {
     return r_value;
 }
 
-linearRegression simplelinRegress(baseTable t, double alpha)
+linearRegression simpleLinRegress(baseTable t, double alpha)
 {
     linearRegression linregress;
 
@@ -231,10 +231,15 @@ int main(void)
     }
 
     double alpha = 0.05;
-    linearRegression linregress = simplelinRegress(*table, alpha);
+    linearRegression linregress = simpleLinRegress(*table, alpha);
     
     printf("Intercep: %f\n", linregress.b0);
     printf("Slope: %f\n", linregress.b1);
+
+    int test_x = 10;
+    int predicted_y = predictYValue(linregress, test_x);
+
+    printf("%d\n", predicted_y);
 
     return 0;
 }
