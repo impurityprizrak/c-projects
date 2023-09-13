@@ -187,6 +187,8 @@ char *generateHash(int *ptr, int size)
 
 int main(void)
 {
+    char *sha256 = malloc(65 * sizeof(char));
+
     // Example with array of integers
 
     int *example1 = malloc(5 * sizeof(int));
@@ -196,7 +198,7 @@ int main(void)
     example1[3] = 4;
     example1[4] = 5;
 
-    char *sha256 = generateHash(example1, 5);
+    sha256 = generateHash(example1, 5);
 
     printf("SHA-256 Hash: ");
 
